@@ -1,0 +1,216 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Navigate_Staffline" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,3629" sap2010:WorkflowViewState.IdRef="Navigate_Staffline_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Navigate_Staffline" sap:VirtualizedContainerService.HintSize="476,3524" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser Chrome: Manage Immigration | Compunnel" sap:VirtualizedContainerService.HintSize="434,3436" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Never" OutUiElement="{x:Null}" ScopeGuid="5d2d7c02-19c5-43f3-922a-197353949449" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,3218" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Search Filters'" sap:VirtualizedContainerService.HintSize="358,158" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Timeout="30000" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="114, 286, 12, 12" DesignTimeScaleFactor="1" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;i' parentid='tableListDiv' tag='I' class='fa fa-chevron-down' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='tableListDiv' tag='I' class='fa fa-chevron-down' aaname='' /&gt;" Guid="cbcf814c-a2f9-4854-b293-04908a7f51de" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhP7ZCxCsQgEAXv/79LbKwVOxt7Wwthj5GYGBMlkOKaG1iQ9b0B/chL/oJBEEIQ772UUrbNATvuyPTsghijaK1FKSXOuZOEMzvuyJBt7IKUkhhjaqiX9GWGDNnG6QmjxFpbZ1aGyyeOklUZLgIYJbMy3AqgSVZlmAog51xnxVLwhF8LRL76j+I8pdsRbAAAAABJRU5ErkJggg==" InformativeScreenshot="f5576a8e5f9b7cb0213923ca118f4621.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="136, 285, 79, 14" FriendlyName="'Search Filters'" FullSelectorArgument="&lt;webctrl parentid='tableListDiv' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tableListDiv' tag='B' type='' class='' aaname='Search Filters' check:innerText='Search Filters' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAASCAYAAAAntuLJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHTSURBVFhH7ZTRbepAEEVfUbRBDdABBVAA/3RCIbRAC3zy6ehYOtH1YG+Sp02+9korszuzc2eOnfybhrppwOyoAbOjBsyOeoN5v9+n3W73udj/lfT+juftdlv0ydrv99Pj8VjUYc85+ej1ek3X63V6Pp/zvqcWMDE4Ho+zMabn83ne/4bxmn4KU3gtVZiA/K2ZFjA1BiIwqxyWVRuiyRrzhZxOp3k5vD7mC8/6WUsIVS2Y+VISJsu63vUD8txevHe5XOanTLK3ymkVJokVVjYlJIvRgL/Nw9Q89pwjmxdSfikJs8aq/gcmypp1jqzpPWOoVRe9/c8kyAWXyWnkvg5Ko97jd20W0UjWSdnslmeKmF7piVpDJ8wac78Fy7rWrnqDiSzEJZ7sE5TLmIORQ5M0uwWTXO9VJQTUyv1uHeLkCSVhmlcXufUecp7MtVe0ClNRyAtbzVdgX8HMQatqbMsTtWJZpwVzDZhqxRDneFgLLWCasDZMFq+QskFrbMFM2Cg9/hpm7S9r1nso42uzvX2ZmNGIy8GQTbLyjWjMOc/D4TCbEK+GKPPTIyGgFrBWLOvoJRRjxn25eYbqPZV8qn/zz3zoZxowO2rA7KgBs6MGzG6apg+eFgqi1u5CJwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Match'" sap:VirtualizedContainerService.HintSize="358,158" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Timeout="{x:Null}" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="118, 374, 175, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Choose Filter'" FullSelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' class='mainSelect' parentclass='mainDropdown' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' class='mainSelect' parentclass='mainDropdown' type='' aaname='' /&gt;" Guid="58d79810-7213-4c04-be0e-c97c68b9ff07" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAAgCAYAAABZ5kkeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALkSURBVHhe7ZxLbuJAFEV7UWyDDTCBFcACWABzZuwhE4Ysgi0w64RJBwl1hMQAR4fm0o/qsp3EKI2te6RSwauv9Q6FhYR/FMZ0BMtsOsONzMfjsfj1+lo8v2yLn88vLi4PWfATT/E1cpWZBjr9fnsrTqfTJWrM44GfeIqvUeirzJhOB2PaAr7irbjKjOU+kU2bwFe8FVeZuRcxpm1Eby2zaTWW2XQGy2w6g2U2neEuMq/X66LX613Lcrm8tPxpm06nxeFwuET+L5vNpuj3+zf7pczn83PbZDIpdrvdzb5pi9dkHpPGMpN05EAEIPlIoOQ/oszD4fC63zIsc/toJHMqrsidcLPZ7HwCjkajcxw0XqcjfQVz6AStGpN+CyguEVOqZM7t++np6Z+1cutoX+Px+ByP12I+z2KxKPb7/eXdX4jRlqORzFViCCWeWgnnpANqyUC7TnhkQmDJE/sR03j6EaeOe0nXiVTtmVjdbUbZOlVrms+BrDgzGAxuhOY1MdpyQjeWWckvAyniySoZlXzaQe9pT+eNAkWZI8QlH0QZI8yR3jOrX1y3TOaydRhDrX7m60RpJXQulvItJ3NMvmQk+UgumUHSEIsfAGok0zr0k4gazzjFVOIcomrPxD4ic26d7XZ77h+vx3ydVN46kaGRzCQ6dxohA/FUCqAvcmiskh/nilJBmYC0S3LNW0fZXEDsIzLn1kmvxzQnCl0nMjSSGUhe7tcMJbxMZqBWW5wHmTjtJFDsx2vF6UecOpU0jomk/SLE6mQuW0d7scz3RULXiQyNZQYSqE8PhQSLKpmJ0aZxUQRkyf2aQc373Ji4j9wtBqQyRojlZGbPzCmhc+voWuJ+zH1A4jqR4S4yG/MIWGbTGSyz6QyW2XQGy2w6g2U2nSErs//QatpG6R9a/agB0zZKHzXgh8CYtoCfeIqv2YfAAA2YTifuRVxcHrHgJ55GkeFG5nuwWq0ur4z5Xiyz6QhF8Q4e3tyEj3JVLQAAAABJRU5ErkJggg==" InformativeScreenshot="a33bbcbdc90bb7e9ff47a66100efcbeb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="118, 327, 33, 14" ElementType="Text" FriendlyName="'Match'" FullSelectorArgument="&lt;webctrl parentid='tableListDiv' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tableListDiv' tag='SPAN' type='' class='' aaname='Match' check:innerText='Match' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAASCAYAAADc4RcWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVEhL7ZOxDYQwEAS/KNqgBqgACqAAcnKKIKYGYjIICQkJ7zUWh87GelkfEbCShVkvvjEHH3mgXqhUPRtqWRbJ81yappHjOE5X3ByPNTK/xHpd17Lv++nclZLxoIqikKqqvOLM8VizfkwpBVMyHhThvu9lGIbTFTfHY02hpmmSLMuuwT1FyrJ091y5j3m2Dn6sAzeocRyvFjLatnVFFYph3xrQmtc9KK5t51nNdV3nMoDowfHCT+YGta6rBwDUtm2XF4qiMSg7t8K3h7LPq25QbAI9YT0dnoXC09YxYlA8ry2zshmUDEWQN0SYuYUKi9lN7R5hcdXfUMzpu/1gY1BsxIYxKAY58ki/vXme/4PSYrQJ4SmUrumfw48Rgii0Ho6s9ZKhnqQXKlUvVJpEvkrIgjy2HGrxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Text="Application Status[k(enter)]" Timeout="{x:Null}" Version="V3" />
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Select All'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="358,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Text="Receipt Received[k(enter)]" Timeout="{x:Null}" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="438, 374, 125, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Select All'" FullSelectorArgument="&lt;webctrl id='drpColumnData' tag='SELECT' class='drpColumnData' parentclass='textSelect commonDrop' /&gt;" FuzzySelectorArgument="&lt;webctrl id='drpColumnData' tag='SELECT' class='drpColumnData' parentclass='textSelect commonDrop' type='' aaname='' /&gt;" Guid="2ced90fa-419e-46fc-ad66-130e70990c29" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAAgCAYAAAA14BsbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJtSURBVHhe7Zu9bQIxGIYzFGuwAA1swAAMQE/HGAxCwQJ0AZqAhIKQKHDyoHsvH+aOQ3JSxP4eyeLw30l+H/sojrfgFI9L4NxLcLlcwsd+HzbbXXjfbL1kVsiVfMnZUktAA50+T6dwvV6rWicnyJV8ydmKUEuAIXRw8oecyVvUEmCHnwBlQM7kLWoJeGY45WDzdgkKxSVwXALHJXC+SZbgcDiE0WgUer3erXBNXRfL5TJMJpNwPp+rmtdh/vF4HNbrdVXzyGw2e5if/oxjfMr9cyNJAgmwWCyqmnC7fkWEv5SAeuam2D4uQTNJErCow+HwbqElBosMtPX7/YdTwoZA4VqnicaC5tP43W5X92Vee2+BiCqcCKIECebzeTgej9W3H6ijrYkkCWx4NjgRC2GPaBsC9QqLeoWr+TVeoTJv20nAmOl0emujH+P5hNwlIGSyGAwGdyJwTR1tTSIkSSBYUG6gotD4tLu/KQR2thXFBm/7W/jeJgF1SKBwkUZz5y6BDVsiNNXF/IoEFhZajwgW2spB0S5XCJIg7seup4+VSDyTgHHxXDplcpcA4tC7BIAkCVhILbCwO/nZQqsNCZ7taoVmaZOAenuqgO1bggRgRegSAJIkaFp0rrXb43Z2qXa2DQGR7G5lPO1N45+JQz/NLyQlY0uRACRClwCQJAEoKFkX/2JXqHGbDUFBaQ4CE3a8Alb/+F5WJovkW61WxUgAhN8lACRL4Px/XALHJXBcAucbl8BxCZwWCfxF03JofdHUXzkvh9ZXzv3PJ/lDruRLzo1/PgEaMIROPDO85FXIlXytAHAngVMmLkHxhPAFEguDfcO+p9MAAAAASUVORK5CYII=" InformativeScreenshot="0639493b91ffaa17c9220ba3ba1233bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="118, 374, 175, 28" ElementType="DropDown" FriendlyName="'Application Status'" FullSelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' type='' class='mainSelect' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAAgCAYAAABZ5kkeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOxSURBVHhe7Zw9bmIxFEZnUWwjG0hDdpAFsID0dBQsgjLKAqgosoF0k9BMIkUTIaXAo4P43nxYfvzkMZk85x7J4mFf2ze+Bw/N8CMFQSWEzEE17Mj8/v6efj0/p8enZfr5+BQt2pds+Imn+Oo0MjNA0O+3t7Rer7e9QfD1wE88xVcXupEZ0wkIgr6Ar3grGpmxPG7koE/gK96KRma+iwRB33BvQ+ag14TMQTWEzEE1hMxBNZxN5vF4nEajUVqtVtuej8F81lksFunh4SFdX1+nl5eX7ehpkNNsNts8s9458hPkdHV1lQaDwabxrDx5JW/y38exccFxnEVmioEotK6FcZm74jKfE4nsa/MsoUPm/8NZZKaQaggkKBLFmk6nm9vr4uKiKZxuypubm52bbd/NzHvWIJ4Y3bLsqxtSe3gfz34zaw+N64Oj/UpjDnHD4XDzKsiRv2E+nzfzlUu+H8/E53H+4fNzAMY038+4ViaTSXp9fd2++wt9jJXoLDOHjpAUQwXK5dPhUyjGmUORKIyKRwzNi8h8yUzzW4xYSer/xGsdPWt94rQ3/Z6HZFK+npPiHOVI/szPKeWqnBgjX+a1/U3g5+C503TetYKsnO3l5eWO0DzTx1hJ6M4yc6gcrgpOQVRgxvwG8+IR4xLSx9hyuWyKqD5ivKD7QAaJ43JoPmtpfZA0xOX5HtqTcQ5WTWvmkjraj9g87hiZvwMurYQu9eV0lpnD94LSJJPLCF68vECKbZOZfUoFVdFL+5dkZn3djEJxeb6nSMRcfRBySXnlxvccWTuPa5MZ/JwVUzO5vIdEhk4yU4xcDC8QzW86f88cv5n1/tSbmcJ6P+/3ycxaLomkIc73g7Y96dcewuXzM/D198WB58tYfrbg82vHhT4kMnSSmQN1IcGLR5H8OyivjBHDXBJUUSgkzYvlcvHsHwzF+5oSgH7FaG/WUxz9nod/Zz5G5pJovg7jbTITp7/b4yDPS3HM1d/EWO3fmR0JfUhk6CQzB6xDdjh8in1/f78pFgWiMC4+RWKMxpiKqOIzXpKLWI+XWFr/7u6uGSMP+nllbr6H1mIMSvtpTo7vS5PIoPXV53nrzMgpj/M1EZYx5ub5Mvc7gcSHRIZOMh8il8PZJ0oQfISQOaiGfypzEHwmIXNQDSFzUA0hc1ANRZnjP7QGfaP1P7TGTw0EfaP1pwbiR2CCvoCfeIqvxR+BAQYwnSC+i0SL9hUbfuKpiww7Mp+D29vb7VMQfC4hc1AJKf0BK6coY9QMckUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click '+'" sap:VirtualizedContainerService.HintSize="358,158" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Timeout="{x:Null}" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="118, 427, 35, 35" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'+'" FullSelectorArgument="&lt;webctrl id='btnAdd' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnAdd' tag='BUTTON' type='' class='' aaname='Click to add search filter' check:innerText='+' /&gt;" Guid="4e83ba5a-88a4-4f4f-81bd-d0d924c8254d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQbSURBVFhHxZjPT1RXFMfnn3Bh6cqFaRfirpt2VXcY1JjU2PijTRoTF7qQoG0wboyrLlrFtggGjEmpSjDRCEKNylAkJA4uTCbQ0mAiDARw+P375ymfi+f18uY+ZkbfjDf5Zt6bd875ft659/2YiUiGY21tzdPq6qqnlZWVTWpqavK27Tg7P9ORFs4uasMsLy/L0tKS0eLioqfGxkbzqceIs2HteunGlnB+KAXCvLnjX7lQFZUD5+pl9/Fq+Xj/L7Kt6Ir5ZJ/vOU6cwiqoDbnVCIRzQb1KJI3hp19XGZBMRTx55Lsgg0YKnJ6RgmmnLt1ocxpnK+poJ9N1cROcDabdinUlZM/pWqfRu4p61NUuBgGmwCkYZ3e/tVsK3q6lsEVd6uNjA9rDg/OD3VtPdBUNW/gEARo4BdM19jzel7OO+YUPfv41aODYQAq2sLAgX54Kd42lE374KqA2y8DZ03mxutVZINfC155eD0671tv/xpmYL+EPhwJGtGu09XzFU2dSJvr79ahZJ4PJaTn4w11nTDrhr9MLU0S7Njc3J58crnQmZaIw4PCHg+lFBo6Nhrb3u3WEAYca2rpkfn5+A472sVP22xNncKYKC67s18cyOztrmCJMKTvFpbedwUH6vTluYNINoF35QSouvSXT09OGycCxU3jsujM4SLmCKzxWJRMTExtwzO3k5OT6nfqqMzhIuYIr2F8uY2NjMjMzIxEuXUhdgdkorDW3reiyjI6OmoZ5cAX7suucX2HBFewrT4XbdTS7t1u/woLbdaQyFW5vyR/O4EwVFtzeM7UGbmpq6v8L4uzlJmdwvlX680NzQXAH8W4ldX++cAbnW3eaO02zzK2EJwQbw8PDsvNQhTMhX8J/aGjINMs8IXi2ssE8l/zU4EzKl/BPJpOmWZse/CzA2Mt/nEn5Ev5wcJEaOH2fg3ZkZGT9wvgw3cMXfzi89zl9E4aUW0pfX598fqLGWSBXwg9f/OEAzHtN1+7xogf9g6ed8lFxubNQ2MIHP3zxVzAPzu4eV8rg4KBU1kWdxcIWPvjhiz8c2rCU3636xOjv75eKW09y1kHqUh8f/PDFHw54GM5f/LR3fHzcrIP6h8/ks2+vOQ3eVdSjLvXxsadTwRjO/0r0Bw+JnFk8HpeTF9/v2auiDvWoq2D4+cEYKXA2IDdnHiWsiZ6eHml49Jd8U3ZTdhzM7vWKePLIpw71qEt9G2xLOIYNqGuQt1Lu3Jxtd3e3dHR0yI+Vd+Xo9zXyxXcVsvOrq7L97drkk32+5zhxxJNHPnWo519jfjBGCpwOG9DuIsUHBgakt7fXTE8sFpP29naJRqPS0tJiPtnne44TRzx5drf8i981AuEYekZ+SM6cKwxDHtSJRMJ0RcU+33OcOOJdUFuBiYj8B/AnLhuPWQuYAAAAAElFTkSuQmCC" InformativeScreenshot="9b056cbff62a452505e017bcab8e779b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="156, 427, 35, 35" ElementType="Button" FriendlyName="'BUTTON btnSearch'" FullSelectorArgument="&lt;webctrl id='btnSearch' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnSearch' tag='BUTTON' type='' class='' aaname='Click to search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVFSURBVFhHvZjdU1RlHMf5J7oou6kLpy60u27yqma6sLEaGx2bqGyaZpipJnN6k/Ii88KsMdMCgbBxKGRUEgcyLIQFZTB5C2VAUKyWhWBZWGCXZV/5xeeJ53j27LNvCj0z39k9e37P7/s5v+ftQIHk2JaWliwlEglL8Xg8rexx9v65tqxw9qR2mFgsJtFoVCkSiaRI3yPODmvPl61lhHNCaSDMGztuyt5ylzz/wRl57JVKefC5b+S+zV+rT675nfvEaVgNaofM1NLCmaBue3zK8NEXyxVIriKefvQ3QaZrKXD6iTSYrtT+7y8ZjfMVeXQls1UxCc4OpqvVOeCRp97+0Wh0tyIfeXUV0wGmwGkwnu5c66CsW5lLqy3ykh8fO6C9WXBOsLrljqakqy180gEqOA2m59jVfveaVcwpfPBzzkEFpy80WDgcliffWt05lk344asB4UEKDunh3FfZakyw1sLXObwKjh+gHhmdMnbMpKLPG6WubViuj3il68Y/UnHuD9lUVGWMzSb87dUr0GCU9ePSZmMnk7Z/Uid9NyeXk6jpkdTCkbhUNfbLQy+UGvumE/5w6OoVUEoUCoXkkR1lxk5O7dhbJ2NTgRUUkUg0LoFQRBYWoxYsn83df+cFiD8cunoKbnFxUerbBowdnMKsd3hSAcQTS9LQfkudpfr+rsNNFngkFpcvq39P6p9NDZf+21oUHGALCwuyp6TJGOzUp5WXZTESU5Vx9biNldn5WYNM+UMKcPAvX17VKy65qIrF0BYAFggEZMt7NcZgp862DilTfyCsFoMpBum4uWAkY5xTcMDE0Cq42dlZ2VhYYQx2qrXXrUzHfQHZ+lGtMQYdOnlVDStz8c0vLhhjTNr4coUqloILBoPi9/uXd+qjxmCnmOS0iemgbCs+a4xBJ85fV0OfLxwcc3Nzat4V8GV6etoYaNK3td0SiyckGktIyU89xhjm2LVbXvUQ2SpsEiPJlmLBrXs2t8qxjXj9C8qYSf/OV78l3QfsdPMNtZKpXOOV20n3swmOFLgNL+X+dvtdfZ8yp7Hhtl/zyIGqDjWUf47PWnsdc640TXXTaUNh+R24+fl5mZmZkc3v5nfYcwJgnq0Bf+R0lzGHSc/srr4Dx8oA7v3DvxiDM4mJ3jM0IaFwTIFQMYa6pmlg+W+GNpkNhtXv+QDCYS0IthIuTl3oNgbfi/YccyUBHvzhijHOLjisrYTdmIuJiQlZvz2/gzoXaUDmaFldrzFGC//JyUm1CasTgvJx4fP5ZPehBmOne9XTu2rktf0/Zz3G8GdxUjDr4GfysTA6+4aMnf4v4Q+HdfDr9zmq5/V6lyfk2lQvm/DFXw+pep+zv6KzhN1utzzxxnFjgrUSfvjir6uW8jcEL3rQ1zd3yQNbjhgTrbbwwQ9f/HXVLDi+QAs1K3d8fFzKTrmMyVZb+OCHr71qCo49iC9AcoPFQXlHR0el9OTFNasgecmPjz4R8NfFohn/4qe8vEYxD86cvyyP7zxmNLhbkY+85MfHOZy6Gf9XwurVgDxZf3+/FO2rNhrlK/KQj7waDD8nGC0Fzg7IZsjRxpwYHh6Whl/b5NXiE/Lw1txer7SIpx/9yUM+8pLfDpYRjmYH1HOQt2VOEJ52cHBQOjo65GBZrRR+eFw2vV4q67cdlftX5iafXPM794kjnn70Jw/5nHPMCUZLgdPNDmivIsnHxsZkZGREDU9nZ6e0t7eLy+WSlpYW9ck1v3OfOOLpZ6+Wc/KbWlo4mn4iJyRPzgrDkBcGj8ejqqLFNb9znzjiTVCZwERE/gXompEFplO5rAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'Choose Filter'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="358,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Text="Application Filed On[k(enter)]" Timeout="{x:Null}" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="118, 427, 175, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Choose Filter'" FullSelectorArgument="&lt;webctrl id='ddlColumn' parentid='address5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ddlColumn' parentid='address5' tag='SELECT' type='' class='mainSelect' aaname='' /&gt;" Guid="588f2fa4-6297-4d7d-ada6-ec8abca2c635" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAAgCAYAAABZ5kkeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALoSURBVHhe7ZxLbuJAFEV7UWyDDTAhK4AFsADmzNgDE4Ysgi0w64RJBwl1hMQAtw7NpR/VZTuJUYKte6RSwauv9Q6FhYR/FHdmtVpdXhnztVhm0xluZD4ej8Wv19fi+WVb/Hx+cXF5yIKfeIqvkavMNNDp99tbcTqdLlFjHg/8xFN8jUJfZcZ0OhjTFvAVb8VVZiz3iWzaBL7irbjKzL2IMW0jemuZTauxzKYzWGbTGSyz6Qx3kXm9Xhe9Xu9alsvlpeVv22QyKQ6HwyXyvWw2m6Lf79/slzKbzc5t4/G42O12N/umLV6TeUway0zSkQMRgOQjgZL/iDIPh8PrfsuwzO2jkcypuCJ3wk2n0/MJ+PT0dI6Dxut0pK9gDp2gVWPSbwHFJWJKlcy5fS8Wi//Wyq2jfY1Go3M8Xov5OPP5vNjv95d3/yBGW45GMleJIZR4aiWckw6oJQPtOuGRCYElT+xHTOPpR5w67iVdJ1K1Z2J1txll61StaT4GsuLMYDC4EZrXxGjLCd1YZiW/DKSIJ6tkVPJpB72nPZ03ChRljhCXfBBljDBHes+sfnHdMpnL1mEMtfqZzxOlldC5WMqXnMwx+ZKR5CO5ZAZJQyx+AKiRTOvQTyJqPOMUU4lziKo9E3uPzLl1ttvtuX+8HvN5UnnrRIZGMpPo3GmEDMRTKYC+yKGxSn6cK0oFZQLSLsk1bx1lcwGx98icWye9HtOcKHSdyNBIZiB5uV8zlPAymYFabXEeZOK0k0CxH68Vpx9x6lTSOCaS9osQq5O5bB3txTLfFwldJzI0lhlIoD49FBIsqmQmRpvGRRGQJfdrBjXvc2PiPnK3GJDKGCGWk5k9M6eEzq2ja4n7MfcBietEhrvIbMwjYJlNZ7DMpjNYZtMZLLPpDJbZdIaszP5Dq2kbpX9o9aMGTNsofdSAHwJj2gJ+4im+Zh8CAzRgOp24F3FxecSCn3gaRYYbme+BH5xovgvLbDpCUfwB3pHa4Ep2Cl4AAAAASUVORK5CYII=" InformativeScreenshot="c24f7715ef90f591620bc17ae6a87f16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="118, 374, 175, 28" ElementType="DropDown" FriendlyName="'Application Status'" FullSelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ddlColumn' tag='SELECT' type='' class='mainSelect' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAAgCAYAAABZ5kkeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOxSURBVHhe7Zw9bmIxFEZnUWwjG0hDdpAFsID0dBQsgjLKAqgosoF0k9BMIkUTIaXAo4P43nxYfvzkMZk85x7J4mFf2ze+Bw/N8CMFQSWEzEE17Mj8/v6efj0/p8enZfr5+BQt2pds+Imn+Oo0MjNA0O+3t7Rer7e9QfD1wE88xVcXupEZ0wkIgr6Ar3grGpmxPG7koE/gK96KRma+iwRB33BvQ+ag14TMQTWEzEE1hMxBNZxN5vF4nEajUVqtVtuej8F81lksFunh4SFdX1+nl5eX7ehpkNNsNts8s9458hPkdHV1lQaDwabxrDx5JW/y38exccFxnEVmioEotK6FcZm74jKfE4nsa/MsoUPm/8NZZKaQaggkKBLFmk6nm9vr4uKiKZxuypubm52bbd/NzHvWIJ4Y3bLsqxtSe3gfz34zaw+N64Oj/UpjDnHD4XDzKsiRv2E+nzfzlUu+H8/E53H+4fNzAMY038+4ViaTSXp9fd2++wt9jJXoLDOHjpAUQwXK5dPhUyjGmUORKIyKRwzNi8h8yUzzW4xYSer/xGsdPWt94rQ3/Z6HZFK+npPiHOVI/szPKeWqnBgjX+a1/U3g5+C503TetYKsnO3l5eWO0DzTx1hJ6M4yc6gcrgpOQVRgxvwG8+IR4xLSx9hyuWyKqD5ivKD7QAaJ43JoPmtpfZA0xOX5HtqTcQ5WTWvmkjraj9g87hiZvwMurYQu9eV0lpnD94LSJJPLCF68vECKbZOZfUoFVdFL+5dkZn3djEJxeb6nSMRcfRBySXnlxvccWTuPa5MZ/JwVUzO5vIdEhk4yU4xcDC8QzW86f88cv5n1/tSbmcJ6P+/3ycxaLomkIc73g7Y96dcewuXzM/D198WB58tYfrbg82vHhT4kMnSSmQN1IcGLR5H8OyivjBHDXBJUUSgkzYvlcvHsHwzF+5oSgH7FaG/WUxz9nod/Zz5G5pJovg7jbTITp7/b4yDPS3HM1d/EWO3fmR0JfUhk6CQzB6xDdjh8in1/f78pFgWiMC4+RWKMxpiKqOIzXpKLWI+XWFr/7u6uGSMP+nllbr6H1mIMSvtpTo7vS5PIoPXV53nrzMgpj/M1EZYx5ub5Mvc7gcSHRIZOMh8il8PZJ0oQfISQOaiGfypzEHwmIXNQDSFzUA0hc1ANRZnjP7QGfaP1P7TGTw0EfaP1pwbiR2CCvoCfeIqvxR+BAQYwnSC+i0SL9hUbfuKpiww7Mp+D29vb7VMQfC4hc1AJKf0BK6coY9QMckUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'In between'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="358,219" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Text="Greater Than[k(enter)]" Timeout="{x:Null}" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="363, 427, 106, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'In between'" FullSelectorArgument="&lt;webctrl id='dateDropdown' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dateDropdown' tag='SELECT' type='' class='selVariable' aaname='' /&gt;" Guid="46c4800e-9ca5-48a6-a1ed-944a98fe6a33" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAgCAYAAADzCU3nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKZSURBVGhD7Zo/jtpAFIdzKK7BBSiAE0C1aTgAPR0FNbTUnIGSFmiyS5NFQlkhUTDR5/jnPEYmjrSw9kjvk0Yez5t/vM/j3cLfgpMkLi5RbsRdLpfw8/09vL4dwo/XNy8NKLjACW4shTgCdPr18RGu12ve6tQNLnCCGyuvEIdVOjjNBDc4EoU4jPpJay64wZEoxPE+dZqNdeTiEsLFJYqLSxQXlyifEnc8HsNwOAzb7TZvqeZ8PofRaBTW63Xe8n+wBmuxpuPikuVh4iRkMpmEVquVFeox6jefz0O73c76LZfLPPpHkNr7/X62BoU6bd1uN7y8fC/Ec1U/YE3NR0x7YU3WBu1BMc2lh6Ms9kym02k4nU753V9oI1bGw8UpQfxgBBCzqJ+STbzX62VXCVKykKD5lFT6IEZyuNJHexiPx1ndzqs19SBxVd3uk0Jdc9v1nwVieEA6nc6NPOq0ESuT93Bx+tE2Zon7AQniniTa08NYybJ1+imhi8UirFarbDx9EEc79zbpGnM4HG4eDu2He8ZLNth1noUVJHllbTEPF6eEVIlTP7Di2Kwt9jRIHIU5drtdNnaz2YTZbJaN10livnguhO33++waxyRea8BXiINYVJU0qE0ciYrv/5WoOKmI4qRxpQ1hnDatz3ySaLm3L6hLHFh5VdKgNnFKCPF7f+NIvl6dcVKJDQaD4gFAIHMqbucFJGpN6pJKnFPNmvEaXykOJK9KGtQmzv5XqTGgRNKu1yQwHxKtSCum7IQxr55gjQPtQTHJZ646xQHCqqTBp8Q59eHiEsXFJYqLSxQXlyguLlFKxfnHQs3m7sdC/nles7n7eZ5/ENtMcIET3JR+EAsEsEon3qde6i+4wImVBjfinHRwcUkSwm/Sbe0/qmwCtwAAAABJRU5ErkJggg==" InformativeScreenshot="899a760e61e0ba0315583565e7349080.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="308, 427, 40, 28" ElementType="ListItem" FriendlyName="'is'" FullSelectorArgument="&lt;webctrl parentid='address5' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='address5' tag='LI' type='' class='dateSelect fixedText commonDrop' aaname='is' check:innerText='is' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAgCAYAAABpRpp6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVFhH7ZMxCsQgEEX3/kfwHPaeQGzF2tpKEASZMMKH3SVNdh1QmAcPgknkIeOLDuPcYGPM1gINlhJosJRAg6UEGiwlWBYcY6RaK1lrb9//K9AT5hPmZ9B7J+fc7T9PBMuDQwjUWiPv/VzPOU+/v38qEA9eJRAZCY4dY8x9V11EIBL8vs7jUEr5WPtFsDw4pTRHAhdt+xnmE+ZAsO1ISAs0WEqgwVICDZYSaLCU4NzgUzgsmOgCNuPm2ResjaQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_6" />
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'SPAN'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="358,219" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Text="12/31/2020[k(enter)]" Timeout="{x:Null}" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="512, 428, 81, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='3' parentid='data_1' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-control txtfromdateval' parentid='data_1' tag='INPUT' type='text' aaname='' /&gt;" Guid="f39f4d7d-de3a-4bc5-99bc-70583ef2c9e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAeCAYAAABdalL1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVGhD7do7DoQwDABR7n9PPrsStKA03jWCCtFEnm6e5FSpRuniIVRuGKc5nL5ZPt+Y5iXWbYvW2pX0HzWPvKB++3Gcce+wRi2SYfPFJqMWyteajFro7mjUQkYFGBVgVIBRAUYFGBVgVIBRAUYFGBVgVIBRAUYFGBVgVIBRAUYFGBVgVIAff8X8oi72WKbIoE7/vK79qFLED8+hcw1fIkJSAAAAAElFTkSuQmCC" InformativeScreenshot="4798ec5860c47dd718ff3c30f2c72160.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="485, 428, 27, 26" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl idx='3' parentid='data_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='data_1' tag='SPAN' class='input-group-addon' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVEhL7ZffCYMwEIc7lBO4gRP47gou4woOkgEyQP1TqK8VX678AidX9IpKTCr0g4PzOPOZCCG5UURm+TRN9BwGatqOuv5B96Y9PZwcYkhf4+g+5EwgZZwcMw4hBgs5Zh2KhRz/OBQLuSyczfXk1lrKsswFckaraxyS13X9EYxW19glN8ZQmqaUJMksQC5D1tGLdzR2yaWsqioX/KzV8Y7GYfnW8CrnwbCcvKRaLvvXuJY8z3Mqy5KKonDxLUevVzkPps1W5rJ/jWvJ/8uuCWXuVY5BeXvdEl63V9/8ljzqMSrqATLq0TnqpQHI6xIaQsQsDw/RG4hzhS3xMyBOAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Delay Duration="[TimeSpan.FromMilliseconds(200)]" sap:VirtualizedContainerService.HintSize="358,91" sap2010:WorkflowViewState.IdRef="Delay_7" />
+            <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="358,158" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="5d2d7c02-19c5-43f3-922a-197353949449" Timeout="{x:Null}" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="166, 489, 15, 16" DesignTimeScaleFactor="1" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='btnSearch' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnSearch' tag='I' type='' class='fa fa-search' aaname='' /&gt;" Guid="aa8164fc-7769-4535-8a58-ef2dcedaab6f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAYAAABvVQZ0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPvZPNasJAFIX7ED5J3sCly+y6d+HObXfiqiCFgotuSkqglGz6A2LBLioBpVIGKihdVFFqGyhViBiwksLA6YxOfiYJWqz0wtnMPfe7k5s7e6lMGbvS/8DSxRa0hoXuyEavb6FaaULNJns9xWF5E1cjF4lBXXRv76BEa4RkWLaJhiMKeVAKd7FSOMbtZiIwBNNxMvSKKN4eTKRDRqX0BDIVabhonAY5TwHs6BVjYZ11kjunsgRkIUzvzzGPD1O976MTaGsG7ftg4yKS82GFjhj63EIhZIjpzMJsaVwDO2j/ElazV751sJTxwcbKg4IYumQKpEMbLk2JTQNYphUMd87mVpSNHJSr26IhW4/H+0hegrHffzPxzXxBe50BNN3EcW0A8hneNZfd3pBAXBKMa78yEQPeFGzXzmVgDMallAiq/S/MvkUdC9dxQOom1NILev65DEyEbZISBYrXsBWMKwBSdC9XZ1vDlspXkDu89p/V32AR7RBWxg/FtqjDU+Ti3AAAAABJRU5ErkJggg==" InformativeScreenshot="d496cd2e99cd473bdaccf344f2da46de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="118, 480, 35, 35" ElementType="Button" FriendlyName="'+'" FullSelectorArgument="&lt;webctrl id='btnAdd' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnAdd' tag='BUTTON' type='' class='' aaname='Click to add search filter' check:innerText='+' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQRSURBVFhHxZjLaxRZFIf7j3AxZlazEF2oOze60p0SHQRF8QkiuNCFEh+QQRfiyoUT4yMmoiL4RkExMSpqWmMI2LoQGoMZMovuTkhi3u/30e+aU95U30p3a3V74UdXdZ1zfl+de+vRHZEsx8zMjKfp6WlPU1NTc1RbW+tt23F2frYjI5xd1IaZnJyUiYkJo/HxcU81NTXmU48RZ8Pa9TKNeeH8UAqE+dPG/+R4VVT+Pnpflu+8In9uOC8L1p41n+zzPceJU1gFtSHnG4FwLqj/U13GcMnWKgOSrYgnj3wXZNBIg9MzUjDt1Klr9U7jXEUd7WSmLs6Bs8G0W7FPKVlz4KbT6GdFPepqF4MA0+AUjLN79LpJimbXUtiiLvXxsQHt4cH5wR5+S3QVDVv4BAEaOAXTNfYunshbx/zCBz//GjRwbCAFGxsbk9X7w11jmYQfvgqozTJw9nSevPLaWSDfwteeXg9Ou9aS/OJMLJTwh0MBI9o12vpPxStnUja6kTDLRGQoKSccx7MR/jq9MEW0ayMjI7J4S6UzKRuFAYc/HEwvMnBsVNf/2q0jDDhUXf9JRkdHv8PRPnZKL750BmersOBKL7yQ4eFhwxRhStkpLrnjDA7U8+5ZmgwjEXfnB6i45LYMDg4aJgPHzrIdl53BgcoT3LIdVdLX1/cdjrnt7+//dqc+5wwOVJ7gijaUS09PjwwNDUmESxdSV2AuCmvNLVhbJt3d3aZhHlzR+hw751NYcEXry9Phlm7P7e3Wr7Dglm6rTIdbd+iWMzhbhQW37uBNAzcwMPDjgjhcVusMLrRK/n1iLgjuIN6t5N6zD87gQuvu0/emWeZWwhOCjY6ODlm0ucKZUCjh397ebpplnhA8W9lgng+dqXYmFUr4d3V1mWbNefCzAGMfPzuTCiX84eAiNXD6PgdtZ2enHCn7Pd3DF384vPc5fROGlFtKIpGQlXuvOgvkS/jhiz8cgHmv6do9XvSgf/zqvSwsLncWClv44Icv/grmwdnd40ppa2uTyntRZ7GwhQ9++OIPhzYs7XerPjGSyaRU3H6Ztw5Sl/r44Icv/nDAw3D+4qe9vb29Zh3cf/JWVuy+5DT4WVGPutTHx55OBWM4/yvRHzwkcmbxeFz2nfy1Z6+KOtSjroLh5wdjpMHZgNyceZSwJpqbm6X6+RvZVXpd/tqY2+sV8eSRTx3qUZf6Nti8cAwbUNcgb6XcuTnbpqYmaWxslNOVD2T7sauyak+FLNp0Tv6YXZt8ss/3HCeOePLIpw71/GvMD8ZIg9NhA9pdpHhra6u0tLSY6YnFYtLQ0CDRaFTq6urMJ/t8z3HiiCfP7pZ/8btGIBxDz8gPyZlzhWHIgzqVSpmuqNjne44TR7wLaj4wEZGvqCckgf/SpjAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Data_Update.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="358,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Data_Update.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVDhPY5Be+Og/JRhmwAEgrgfiBiIxSC1ID9wAkCADsQCkFqpniBuQCMTHKDGADYh5yDIABYwaQJ4BILVAzA/E8pQYUAjET2EGUJyZyMSP/gMAVL0PxObiDaIAAAAASUVORK5CYII=" InformativeScreenshot="c64d2fb57c69c68b113ffdb332bbe85c.jpg" Selector="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" Url="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

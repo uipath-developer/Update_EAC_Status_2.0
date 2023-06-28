@@ -1,0 +1,363 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="808,1551.2" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uma="clr-namespace:UiPath.MicrosoftOffice365.Activities;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umaf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="100">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Persistence</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="63">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="630.4,1606.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="temp_DT" />
+      <Variable x:TypeArguments="mg:DriveItem" Name="dr_item" />
+      <Variable x:TypeArguments="sd:DataTable" Name="eac_DT" />
+      <Variable x:TypeArguments="mg:DriveItem[]" Name="f_array" />
+      <Variable x:TypeArguments="mg:DriveItem[]" Name="f_Item" />
+      <Variable x:TypeArguments="x:String" Name="file" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uma:Office365ApplicationScope ApplicationId="{x:Null}" ApplicationSecret="{x:Null}" CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ContinueOnError="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" Tenant="{x:Null}" AuthenticationType="InteractiveToken" DisplayName="Microsoft Office 365 Scope - Online File Check" Environment="Global" sap:VirtualizedContainerService.HintSize="487.20000000000005,916" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_1" OAuthApplication="UiPath" Password="GUjr!@#$2023" Services="Files, Mail" Timeout="60000" Username="sgujral@compunnel.com">
+      <uma:Office365ApplicationScope.Body>
+        <ActivityAction x:TypeArguments="mg:GraphServiceClient">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="mg:GraphServiceClient" Name="ParentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="453.6,749.6" sap2010:WorkflowViewState.IdRef="Sequence_55">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umaf:FindFilesAndFolders DriveMetadata="{x:Null}" DriveName="{x:Null}" First="{x:Null}" SiteUrl="{x:Null}" DisplayName="Find Files And Folders" sap:VirtualizedContainerService.HintSize="410.4,86.4" sap2010:WorkflowViewState.IdRef="FindFilesAndFolders_1" Query="[Now.ToString(&quot;MMM-yyyy&quot;)]" Results="[f_array]" Subfolder="test_folder" />
+            <If Condition="[f_array.Length = 0]" sap:VirtualizedContainerService.HintSize="410.4,533.6" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376.8,268" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="mg:DriveItem" Name="dest_Folder" />
+                    <Variable x:TypeArguments="mg:DriveItem[]" Name="f_File" />
+                    <Variable x:TypeArguments="mg:DriveItem" Name="folder" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <umaf:FindFilesAndFolders DriveMetadata="{x:Null}" DriveName="{x:Null}" First="{x:Null}" Query="{x:Null}" SiteUrl="{x:Null}" Subfolder="{x:Null}" DisplayName="Find Files And Folders" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="FindFilesAndFolders_4" Results="[f_File]" />
+                  <ui:ForEach x:TypeArguments="mg:DriveItem" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[f_File]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="mg:DriveItem">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="mg:DriveItem" Name="currentItem" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="624,687.2" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[currentItem.Name = &quot;EAC_Report_Files&quot;]" sap:VirtualizedContainerService.HintSize="580.8,597.6" sap2010:WorkflowViewState.IdRef="If_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="547.2,414.4" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <umaf:CreateFolder DriveMetadata="{x:Null}" DisplayName="Create Folder" Folder="[dest_Folder]" sap:VirtualizedContainerService.HintSize="504,134.4" sap2010:WorkflowViewState.IdRef="CreateFolder_1" Name="[Now.ToString(&quot;MMM-yyyy&quot;)]" ParentItem="[currentItem]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </umaf:CreateFolder>
+                                <umae:CreateWorkbook WorkBookUrl="{x:Null}" ConflictBehavior="Replace" DisplayName="Create Workbook" sap:VirtualizedContainerService.HintSize="504,85.6" sap2010:WorkflowViewState.IdRef="CreateWorkbook_1" Name="[&quot;Data_Processing_&quot; + DateTime.Now.Date.ToString(&quot;MM-dd-yyyy&quot;) + &quot;.xlsx&quot;]" Parent="[dest_Folder]" WorkBook="[dr_item]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </umae:CreateWorkbook>
+                                <ui:Continue sap:VirtualizedContainerService.HintSize="504,24.8" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_60" />
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="mg:DriveItem[]" Name="f_Item" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uma:Office365ApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uma:Office365ApplicationScope>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="587.2,260.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="430.4,142.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Manage Immigration | Compunnel" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="49425a07-ed49-45a7-841d-00d684457c2d" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1043.2,145.6" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="datafile_Check" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'Export to excel'" sap:VirtualizedContainerService.HintSize="266.4,52.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="49425a07-ed49-45a7-841d-00d684457c2d" Timeout="30" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="497.6,834.4" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[datafile_Check = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,719.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                          <ui:InterruptibleDoWhile.Body>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,552" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'Export to excel'" sap:VirtualizedContainerService.HintSize="357,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="49425a07-ed49-45a7-841d-00d684457c2d" Timeout="30000" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="262, 627, 104, 19" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Export to excel'" FullSelectorArgument="&lt;webctrl id='exportLicensing' tag='BUTTON' aaname=' Export to excel' class='anchexportexcel' innertext=' Export to excel' name='btnExportLicensing' parentclass='ExportButton' visibleinnertext=' Export to excel' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exportLicensing' tag='BUTTON' aaname=' Export to excel' class='anchexportexcel' innertext=' Export to excel' name='btnExportLicensing' parentclass='ExportButton' visibleinnertext=' Export to excel' type='' check:text='Export to excel' /&gt;" Guid="6e4a4c45-df91-4a0d-82cf-539c9c9daa07" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAXCAYAAADug6rPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALQSURBVGhD7Zi9ahtBFIXzEG79EnmEVHbjKn1UpZIQS0iXKoGUAhk1caPGlZGQ1agzrgLBJKrcBRcxLmR3wS5kQziZnzurO3+7KyWrZGE+WNDO3J295547g9hnSDSKZFjDSIY1jGRYwyg1bHnzBZOTPj4ds+vkFJ+v7ykisU1KDJvjMDtA54iZddTGXncPz7OXOPyWTNs25YZ125gs6FayOMXrbh9nV8foREy7GPSxs+9frekdRdTI4hyt/TEu6JYj89pKDutSkLPLhoa18E7stg8fD7Cb9XFJUwZl2MAd3RLJMMewX99xZh2PfXylKUOhYfMxdrJz3NLt7XRIsXcYCfN7U5l8YEcqUWa3MnFqvaGey8Z4H4oRqPfQXL6ufNbEs5w8QnFRHRp+yvTmNEgavfFaDHt6xM+HRzW6fLjH8kn8oONxLcMEUpwu2iV6uWgjhhJXIoYYqWYRcUKgKbRanxcujxNU3WHUALpo9O5QzlYedlxYh2Mey8eqC8+7IGeX6oYJczrZG8yuZnibtTGjsahh1EWrixVVCRdi5Y5yui8vqCAvsCuIF1EJd+cqGObsEG8dQhXfjbOaLKxjdW/QTReMq8UwwfWkhd3uC7ya/NADG+4whVuwgNC8wF4xpXhmGF+nomGeEZHnVJzXfCzO0+EaY9Dj7lrBhizgHxkmkx9jlB8pEneHsXtXkLr/M8O857ym0FjHm0dcR9gwfsowajFs3SOxwDA5rwVJcUaEFpoXkZtC3WmKotY3cZsapuJ4HpGcrTzsd4d1UIxZiz3vj9PzBTm71Peng7a8dYlkvY7Nk6XOHMhO1/FWl5JAPcfERY6k6G4Rc9YuM2taazjwOFo3rkNCDUDPrHTY43bz+PmGKDfM/dLBL/m3XiQQ6MsNIMO4SQmPEsMi3xLNJb8p3vytz1PJsCqUGpb4v0iGNYxkWMNIhjWMZFjDSIY1CuA3N62WZT3Pgn0AAAAASUVORK5CYII=" InformativeScreenshot="cec4d0052e0c47e361580df40e57b4a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Visible" WaitForReadyArgument="Complete">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="205, 619, 47, 31" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl aaname='Excel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Excel' tag='A' type='' class='btn btn-default buttons-excel buttons-html5' check:innerText='Excel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAjCAYAAAA5dzKxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVFhH7ZRtCoMwDIZ3W2F4BxE8hKDnKJ5CvEVl7A6ZadMufu3HNjVKHuiPxCp5+na7wYW4lox9POHsKxCT4c0zoTJSURmpqIxUVEYq38v0DWT3FJLZqqClLf+irVPIjKVqnR9lCjA91RtysIwFk6dQdlRCByXfy1PNm2E30VXvhFlfQDIo4K+cNcWqWBx09D1/GEntX9pJhk6RLxrAgSedF5BNT5/XBArPUqJayG9met0WhiZcf3Y4PlkRMjhgZpp43RyfkuGpMo6XwedhaBQIg07ew0Hds6X+vteMX4mwcKDJv9fAaCCUC/t5SrzP0txeRiAqIxWVkYrKSEVlpKIyUhnJYHH2FYjJXIELyQC8AHFTC8VhxDhDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.PointOffset>
+                                      <uix:PointOffset Position="TopRight" X="-49" Y="10" />
+                                    </uix:TargetAnchorable.PointOffset>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <Delay Duration="[TimeSpan.FromSeconds(3)]" sap:VirtualizedContainerService.HintSize="357,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                              <ui:FileExistsX DisplayName="File Exists" Exists="[datafile_Check]" sap:VirtualizedContainerService.HintSize="357,134" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="C:\Users\Automations\Downloads\ImmigrationData.xlsx" />
+                            </Sequence>
+                          </ui:InterruptibleDoWhile.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InterruptibleDoWhile>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" DesignTimeRectangle="262, 627, 104, 19" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Export to excel'" FullSelectorArgument="&lt;webctrl id='exportLicensing' tag='BUTTON' aaname=' Export to excel' class='anchexportexcel' innertext=' Export to excel' name='btnExportLicensing' parentclass='ExportButton' visibleinnertext=' Export to excel' /&gt;" FuzzySelectorArgument="&lt;webctrl id='exportLicensing' tag='BUTTON' aaname=' Export to excel' class='anchexportexcel' innertext=' Export to excel' name='btnExportLicensing' parentclass='ExportButton' visibleinnertext=' Export to excel' type='' check:text='Export to excel' /&gt;" Guid="a99cf223-4192-49ce-935c-aba979b4cba0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAXCAYAAADug6rPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALQSURBVGhD7Zi9ahtBFIXzEG79EnmEVHbjKn1UpZIQS0iXKoGUAhk1caPGlZGQ1agzrgLBJKrcBRcxLmR3wS5kQziZnzurO3+7KyWrZGE+WNDO3J295547g9hnSDSKZFjDSIY1jGRYwyg1bHnzBZOTPj4ds+vkFJ+v7ykisU1KDJvjMDtA54iZddTGXncPz7OXOPyWTNs25YZ125gs6FayOMXrbh9nV8foREy7GPSxs+9frekdRdTI4hyt/TEu6JYj89pKDutSkLPLhoa18E7stg8fD7Cb9XFJUwZl2MAd3RLJMMewX99xZh2PfXylKUOhYfMxdrJz3NLt7XRIsXcYCfN7U5l8YEcqUWa3MnFqvaGey8Z4H4oRqPfQXL6ufNbEs5w8QnFRHRp+yvTmNEgavfFaDHt6xM+HRzW6fLjH8kn8oONxLcMEUpwu2iV6uWgjhhJXIoYYqWYRcUKgKbRanxcujxNU3WHUALpo9O5QzlYedlxYh2Mey8eqC8+7IGeX6oYJczrZG8yuZnibtTGjsahh1EWrixVVCRdi5Y5yui8vqCAvsCuIF1EJd+cqGObsEG8dQhXfjbOaLKxjdW/QTReMq8UwwfWkhd3uC7ya/NADG+4whVuwgNC8wF4xpXhmGF+nomGeEZHnVJzXfCzO0+EaY9Dj7lrBhizgHxkmkx9jlB8pEneHsXtXkLr/M8O857ym0FjHm0dcR9gwfsowajFs3SOxwDA5rwVJcUaEFpoXkZtC3WmKotY3cZsapuJ4HpGcrTzsd4d1UIxZiz3vj9PzBTm71Peng7a8dYlkvY7Nk6XOHMhO1/FWl5JAPcfERY6k6G4Rc9YuM2taazjwOFo3rkNCDUDPrHTY43bz+PmGKDfM/dLBL/m3XiQQ6MsNIMO4SQmPEsMi3xLNJb8p3vytz1PJsCqUGpb4v0iGNYxkWMNIhjWMZFjDSIY1CuA3N62WZT3Pgn0AAAAASUVORK5CYII=" InformativeScreenshot="0fe3590da56055b679b8ac31e8359e0a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="205, 619, 47, 31" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl aaname='Excel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Excel' tag='A' type='' class='btn btn-default buttons-excel buttons-html5' check:innerText='Excel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAjCAYAAAA5dzKxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVFhH7ZRtCoMwDIZ3W2F4BxE8hKDnKJ5CvEVl7A6ZadMufu3HNjVKHuiPxCp5+na7wYW4lox9POHsKxCT4c0zoTJSURmpqIxUVEYq38v0DWT3FJLZqqClLf+irVPIjKVqnR9lCjA91RtysIwFk6dQdlRCByXfy1PNm2E30VXvhFlfQDIo4K+cNcWqWBx09D1/GEntX9pJhk6RLxrAgSedF5BNT5/XBArPUqJayG9met0WhiZcf3Y4PlkRMjhgZpp43RyfkuGpMo6XwedhaBQIg07ew0Hds6X+vteMX4mwcKDJv9fAaCCUC/t5SrzP0txeRiAqIxWVkYrKSEVlpKIyUhnJYHH2FYjJXIELyQC8AHFTC8VhxDhDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVDhPY5Be+Og/JRhmwAEgrgfiBiIxSC1ID9wAkCADsQCkFqpniBuQCMTHKDGADYh5yDIABYwaQJ4BILVAzA/E8pQYUAjET2EGUJyZyMSP/gMAVL0PxObiDaIAAAAASUVORK5CYII=" InformativeScreenshot="21e42331341105d31270ba0c348da2ca.jpg" Selector="&lt;html app='chrome.exe' title='Manage Immigration | Compunnel' /&gt;" Url="https://staffline.compunnel.com/ImmigrationRequest/ManageImmigration" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
