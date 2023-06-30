@@ -1,5 +1,6 @@
 {
   "name": "Update_EAC_Status_2.0",
+  "projectId": "5fbbaa92-021c-4c0c-9c6c-b9bf32ebe6cd",
   "description": "Update_EAC_Status_2.0",
   "main": "Main.xaml",
   "dependencies": {
